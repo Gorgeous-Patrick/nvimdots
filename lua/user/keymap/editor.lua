@@ -6,6 +6,8 @@ local map_cmd = bind.map_cmd
 local user_editor_mapping = {
 	["n|H"] = map_cmd("^"):with_noremap():with_desc("Go to the start of the line"),
 	["n|L"] = map_cmd("$"):with_noremap():with_desc("Go to the end of the line"),
+	["v|H"] = map_cmd("^"):with_noremap():with_desc("Go to the start of the line"),
+	["v|L"] = map_cmd("$"):with_noremap():with_desc("Go to the end of the line"),
 }
 
 bind.nvim_load_mapping(user_editor_mapping)
